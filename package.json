@@ -1,0 +1,27 @@
+{
+  "name": "learnwebpack",
+  "version": "1.0.0",
+  "description": "First attempt to learn webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-celisha-wigwe/learnwebpack.git"
+  },
+  "keywords": [
+    "learnwebpack"
+  ],
+  "author": "andela-celisha-wigwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-celisha-wigwe/learnwebpack/issues"
+  },
+  "homepage": "https://github.com/andela-celisha-wigwe/learnwebpack#readme",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "lodash": "^4.13.1",
+    "webpack": "^1.13.1"
+  }
+}
