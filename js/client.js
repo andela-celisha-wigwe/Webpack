@@ -15,7 +15,6 @@ ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Layout}>
 			<IndexRoute component={Todos}></IndexRoute>
-			<Route path="favorites" component={Favorites}></Route>
 			<Route path="settings" component={Settings}></Route>
 		</Route>
 	</Router>,

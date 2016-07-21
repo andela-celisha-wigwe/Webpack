@@ -5,11 +5,18 @@ import TodoStore from '../stores/TodoStore';
 
 export default class Todos extends React.Component {
     constructor() {
-        super()
-        const store = new TodoStore;
+        super(); 
         this.state = {
-        	todos: store.getAll(),
+            todos: TodoStore.getAll(),
         };
+    }
+
+    componentWillMount() {
+        TodoStore.on("change", () => { 
+            this.setState({
+                todos: TodoStore.getAll(),
+            });
+        });
     }
     
     render() {
