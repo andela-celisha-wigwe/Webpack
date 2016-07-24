@@ -14,3 +14,26 @@ export function deleteTodo(id) {
         id,
     });
 }
+
+export function reloadTodos() {
+    dispatcher.dispatch({
+        type: "FETCH_TODOS"
+    })
+
+    setTimeout(() => {
+        dispatcher.dispatch({
+            type: "RECEIVE_TODOS", todos: [
+                {
+                    id: 888888,
+                    text: "Go shopping agagin",
+                    complete: false
+                },
+                {
+                    id: 987967,
+                    text: "Hug your wife",
+                    complete: true
+                }
+            ]
+        });
+    }, 2000)
+}
